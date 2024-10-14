@@ -1,8 +1,20 @@
-const ExponentFive = () => (
-  <div className="exponent-counter-container">
-    <p className="exponent-label">n⁵</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 * 2 = <span className="total">32</span></p>
-  </div>
-);
+import React from "react";
+
+const ExponentFive = ({ num }) => {
+  const exponent = 5;
+  const result = Math.pow(num, exponent);
+
+  return (
+    <div className="exponent-box">
+      <h3>
+        {num}
+        <sup>{exponent}</sup> = {result}
+      </h3>
+      <p>
+        {num} * {num} * {num} * {num} * {num} = {result}
+      </p>
+    </div>
+  );
+};
 
 export default ExponentFive;

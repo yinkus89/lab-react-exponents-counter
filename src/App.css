@@ -1,81 +1,92 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.container {
-  width: 100%;
-  padding: 30px 50px;
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: baseline;
-  margin-top: -50px;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Counter.css */
-.counter-container {
-  width: 300px;
-  height: 150px;
-  background-color: #edf2f7;
-  padding: 0.2rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Main container styles */
+.App {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 auto;
-  margin-top: -10px;
+  width: 650px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
   margin-bottom: 20px;
 }
 
-.counter-value {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+/* Counter container styles */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.counter-button {
-  background-color: #4299e1;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.6rem;
-  border-radius: 50px;
-  width: 70px;
-  height: 45px;
+.counter-container button {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
   cursor: pointer;
-  margin: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.counter-button:hover {
-  background-color: #3182ce;
+.counter-container button:hover {
+  background-color: #2980b9;
 }
 
-/* PowerFive.css */
-.exponent-counter-container {
-  background-color: #f0f4f8;
-  padding: 0.1rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 250px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.counter-container span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Exponents container styles */
+.exponents-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: calc(inline); /* Prevent wrapping to keep them in a single row */
+  margin-top: 20px; /* Add space above */
+}
+
+/* Exponent box styles */
+.exponent-box {
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #34495e;
+  flex: 2; /* Each exponent box takes equal width */
+  margin: 0 5px; /* Add horizontal margin for spacing */
+  text-align: center; /* Center text in each box */
 }
 
 .exponent-label {
-  font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
-.exponent-result {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.total {
-  font-size: 1.6rem;
-  font-weight: 700;
+.exponent-value {
+  color: #2c3e50;
 }
